@@ -1,0 +1,202 @@
+{
+  "schema": "srhd-modkit-audit-v1",
+  "target": "/mnt/data/ultra1022_validate/normal/FHD_Ultra0",
+  "profile": "dev",
+  "coverage_complete": false,
+  "operational_failure": false,
+  "allowed": [],
+  "summary": {
+    "error": 2,
+    "warning": 0,
+    "info": 0,
+    "suppressed": 0,
+    "checks": 13
+  },
+  "checks": [
+    {
+      "name": "structure",
+      "status": "passed",
+      "complete": true,
+      "checked_files": [
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG",
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Main.dat",
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Rus",
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Rus/Lang.dat",
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/ModuleInfo.txt",
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/README_Ultra0.txt"
+      ],
+      "details": {},
+      "issues": []
+    },
+    {
+      "name": "workspace-artifacts",
+      "status": "passed",
+      "complete": true,
+      "checked_files": [],
+      "details": {},
+      "issues": []
+    },
+    {
+      "name": "format-signatures",
+      "status": "passed",
+      "complete": true,
+      "checked_files": [],
+      "details": {},
+      "issues": []
+    },
+    {
+      "name": "unknown-formats",
+      "status": "passed",
+      "complete": true,
+      "checked_files": [],
+      "details": {},
+      "issues": []
+    },
+    {
+      "name": "python-sources",
+      "status": "skipped",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "reason": "Python-файлы не найдены"
+      },
+      "issues": []
+    },
+    {
+      "name": "native-loader",
+      "status": "skipped",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "reason": "XenoNativeLoader plugin/manifest не найден"
+      },
+      "issues": []
+    },
+    {
+      "name": "blockpar-dat",
+      "status": "issues",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "scope": "critical"
+      },
+      "issues": [
+        {
+          "severity": "error",
+          "code": "dat-invalid",
+          "message": "Инструмент не найден: /mnt/data/xmk/BlockParEditor/BlockParEditor.Legacy.exe",
+          "path": "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Main.dat",
+          "mod": "FHD_Ultra0",
+          "validator": "blockpar-dat",
+          "location": null,
+          "evidence": null,
+          "remediation": null,
+          "suppressed": false,
+          "suppression": null
+        },
+        {
+          "severity": "error",
+          "code": "dat-invalid",
+          "message": "Инструмент не найден: /mnt/data/xmk/BlockParEditor/BlockParEditor.Legacy.exe",
+          "path": "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Rus/Lang.dat",
+          "mod": "FHD_Ultra0",
+          "validator": "blockpar-dat",
+          "location": null,
+          "evidence": null,
+          "remediation": null,
+          "suppressed": false,
+          "suppression": null
+        }
+      ]
+    },
+    {
+      "name": "game-text",
+      "status": "passed",
+      "complete": true,
+      "checked_files": [
+        "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/ModuleInfo.txt"
+      ],
+      "details": {},
+      "issues": []
+    },
+    {
+      "name": "scripts",
+      "status": "skipped",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "reason": "SCR/RSON не найдены"
+      },
+      "issues": []
+    },
+    {
+      "name": "text-quests",
+      "status": "skipped",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "reason": "QM/QMM не найдены"
+      },
+      "issues": []
+    },
+    {
+      "name": "quest-cards",
+      "status": "skipped",
+      "complete": true,
+      "checked_files": [],
+      "details": {
+        "reason": "QM/QMM не найдены"
+      },
+      "issues": []
+    },
+    {
+      "name": "quest-media",
+      "status": "skipped",
+      "complete": false,
+      "checked_files": [],
+      "details": {
+        "reason": "проверка не входит в профиль dev"
+      },
+      "issues": []
+    },
+    {
+      "name": "resource-integrity",
+      "status": "skipped",
+      "complete": false,
+      "checked_files": [],
+      "details": {
+        "reason": "проверка не входит в профиль dev"
+      },
+      "issues": []
+    }
+  ],
+  "mods": [],
+  "issues": [
+    {
+      "severity": "error",
+      "code": "dat-invalid",
+      "message": "Инструмент не найден: /mnt/data/xmk/BlockParEditor/BlockParEditor.Legacy.exe",
+      "path": "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Main.dat",
+      "mod": "FHD_Ultra0",
+      "validator": "blockpar-dat",
+      "location": null,
+      "evidence": null,
+      "remediation": null,
+      "suppressed": false,
+      "suppression": null
+    },
+    {
+      "severity": "error",
+      "code": "dat-invalid",
+      "message": "Инструмент не найден: /mnt/data/xmk/BlockParEditor/BlockParEditor.Legacy.exe",
+      "path": "/mnt/data/ultra1022_validate/normal/FHD_Ultra0/CFG/Rus/Lang.dat",
+      "mod": "FHD_Ultra0",
+      "validator": "blockpar-dat",
+      "location": null,
+      "evidence": null,
+      "remediation": null,
+      "suppressed": false,
+      "suppression": null
+    }
+  ]
+}

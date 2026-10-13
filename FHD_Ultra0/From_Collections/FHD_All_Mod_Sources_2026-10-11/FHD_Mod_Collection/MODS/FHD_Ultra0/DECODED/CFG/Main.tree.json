@@ -1,0 +1,60 @@
+{
+  "format": "blockpar",
+  "header_key": 2984822409,
+  "new_format": true,
+  "seed": 610800471,
+  "sha256": "1067a3ee89aa720a72ee22f1c672c4cfa72a29dca04f14754615577a3b75069f",
+  "tree": {
+    "sorted": false,
+    "entries": [
+      {
+        "name": "BV",
+        "block": {
+          "sorted": false,
+          "entries": [
+            {
+              "name": "OnLoad",
+              "block": {
+                "sorted": false,
+                "entries": [
+                  {
+                    "name": "Runtime",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "87_FHDULTRA",
+                          "value": "ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDULTRA.Boot'));"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "OnStart",
+              "block": {
+                "sorted": false,
+                "entries": [
+                  {
+                    "name": "0DayScripts",
+                    "block": {
+                      "sorted": false,
+                      "entries": [
+                        {
+                          "name": "87_FHDULTRA",
+                          "value": "ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.FHDULTRA.Boot'));"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
