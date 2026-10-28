@@ -1,0 +1,15 @@
+Name=FHD_SET
+Section=FHD_MODS
+Author=Prolog_D
+Priority=1
+Conflict=EvoFreeInflation,EvoNoInflation
+Languages=Rus
+SmallDescription=Normal: SET появляются постепенно по ГТУ; каждый предмет навсегда сохраняет уровень своего SET.
+FullDescription=В игру добавлено 15 комплектов (75 предметов). SET появляются по уровням ГТУ 1 - 8. Каждый предмет создаётся гаальским и фиксируется на уровне ГТУ своего комплекта: последующий рост ГТУ его характеристики не повышает. При появлении новых SET в инфопанели отображается красное уведомление.
+FullDescription=Отключение мода посреди прохождения не рекомендуется: SET-предметы и служебные данные сохраняются в сохранении.
+SmallDescription=------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+FullDescription= ------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+Languages=Eng
+SmallDescription=Normal: SET appear gradually based on GTL; each item permanently retains its SET level.
+FullDescription=15 sets (75 items) have been added to the game. SET appear according to GTL levels 1 - 8. Every item is generated as Gaalian and locked to its set's GTL level: subsequent GTL increases will not improve its stats. A red notification appears in the info panel when new SET become available.
+FullDescription=Disabling the mod mid-playthrough is not recommended: SET items and system data are stored in the save file.

@@ -1,0 +1,48 @@
+{
+  "archive_name": "FHD_SET.rar",
+  "archive_size": 3140232,
+  "archive_sha256": "e209ea62ecdd2349d2ad93a67c0a63b67ea064b2827226bae61eea4331f46a8c",
+  "excluded": [
+    {
+      "name": "FHD_SET/CFG/Main.dat.dump.txt",
+      "size": 104819,
+      "sha256": "2f6873567b2e3151836b7cc7e044098e7077f1357aac2b2430d10a10da507a53",
+      "reason": "Redundant flattened dump; all key/value lines match recovered DAT"
+    },
+    {
+      "name": "FHD_SET/CFG/Rus/Lang.dat.dump.txt",
+      "size": 394166,
+      "sha256": "9f5244c93f08817b5bec1b6dd720a50443af6fe47e04e18c420a833cf62cae57",
+      "reason": "Redundant flattened dump; all key/value lines match recovered DAT"
+    },
+    {
+      "name": "FHD_SET/╨í╨ò╨ó╨½.bmp",
+      "size": 6220854,
+      "sha256": "f66d4da2449bc19db81b67c0e7a4cc99b42878ad324be893f616b23da97f2931",
+      "reason": "Gameplay screenshot; not referenced by supplied configs"
+    },
+    {
+      "name": "FHD_SET/╨í╨╡╤é╤ï 2.bmp",
+      "size": 6038138,
+      "sha256": "063c5f0265ec4cb1f5e0b9985d3f323aed3587ee57b18f2e69b78fad869df980",
+      "reason": "Gameplay screenshot; not referenced by supplied configs"
+    },
+    {
+      "name": "FHD_Ultra0/README_Ultra0.txt",
+      "size": 750,
+      "sha256": "4bd80a2e7619cd6c279ed0bad76bd9c02b5142fc1332467c1b44604fe21831be",
+      "reason": "Documentation consolidated into README"
+    }
+  ],
+  "dump_verification": {
+    "Main.dat.dump.txt": {
+      "key_value_lines": 1604,
+      "all_equal": true
+    },
+    "Lang.dat.dump.txt": {
+      "key_value_lines": 5418,
+      "all_equal": true
+    }
+  },
+  "live_game_executed": false
+}

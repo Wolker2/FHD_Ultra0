@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checks_passed": 21,
+  "checks": [
+    "Isolated source-only build reproduces all original runtime SHA-256 hashes",
+    "Exactly eight runtime files",
+    "Five DATs rebuilt",
+    "No DLL or SCR in the supplied runtime set",
+    "DAT decode/encode: FHD_SET/CFG/CacheData.dat",
+    "DAT decode/encode: FHD_SET/CFG/Main.dat",
+    "DAT decode/encode: FHD_SET/CFG/Rus/Lang.dat",
+    "DAT decode/encode: FHD_Ultra0/CFG/Main.dat",
+    "DAT decode/encode: FHD_Ultra0/CFG/Rus/Lang.dat",
+    "All 90 complete literal CT/code-block references resolve in supplied configs",
+    "Local runtime path resolves: FHD_SET/DATA/ItemsUseless/FHDSET_SearchTool.gi",
+    "Local runtime path resolves: FHD_SET",
+    "GI type-2 full roundtrip",
+    "31x31 GI with all three planes retained",
+    "Editable GI pixel source changes the encoded resource losslessly",
+    "Uploaded Ultra ammo code uses 55% capacity (45% reduction)",
+    "DAT script edits compile and decode without altering other source fields",
+    "CP1251 metadata and module priority retained: FHD_SET",
+    "Original English metadata/absent English DAT retained: FHD_SET",
+    "CP1251 metadata and module priority retained: FHD_Ultra0",
+    "Original English metadata/absent English DAT retained: FHD_Ultra0"
+  ],
+  "runtime_sha256": {
+    "FHD_SET/CFG/CacheData.dat": "eb9cbeb66cb8e1ffe3c0c7d4e0e09aeb2c466cd7ce30a6d75667d08db693917b",
+    "FHD_SET/CFG/Main.dat": "e71996326ef2dd0a45e8d320779b0b6a85e2f6ae8937d53709f5ef6eee9c8055",
+    "FHD_SET/CFG/Rus/Lang.dat": "2568d06bfc06d844363142f662e1839a91c2d51ec5ea11d99a0a3c8c9cccf745",
+    "FHD_SET/DATA/ItemsUseless/FHDSET_SearchTool.gi": "c2c8ad128529ad04835b84c461db1a235c48898b6e1f2eb675591760d171e2a9",
+    "FHD_SET/ModuleInfo.txt": "fce48950c2351cfedff5858be5a01d6f056c6851cfc96bd9e82e640227baa7bb",
+    "FHD_Ultra0/CFG/Main.dat": "1067a3ee89aa720a72ee22f1c672c4cfa72a29dca04f14754615577a3b75069f",
+    "FHD_Ultra0/CFG/Rus/Lang.dat": "cd2def4c972667392894bb72d002787f81d5ffb4ae4e0c4c257a1957c0cfcc34",
+    "FHD_Ultra0/ModuleInfo.txt": "16c66ff5f3845197a10bf57eb3f9f8f6b7ea37bf3a2853b52c863f9305074bd1"
+  },
+  "literal_reference_count": 90,
+  "missing_literal_references": [],
+  "dynamic_reference_calls_not_resolved": 2,
+  "local_paths": [
+    {
+      "field": "Bm.ItemsUseless.2FHDSET_SearchTool_s",
+      "target": "FHD_SET/DATA/ItemsUseless/FHDSET_SearchTool.gi",
+      "directory": false
+    },
+    {
+      "field": "FHDSETV1.Runtime",
+      "target": "FHD_SET",
+      "directory": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "version-label",
+      "fact": "CacheData FHDSETV1.Version is 2.3.0-v25-canonical; supplied Ultra notes require FHD_SET v2.4.14+. Exact FHD_SET release cannot be established from these labels alone."
+    },
+    {
+      "id": "ammo-description",
+      "fact": "Ultra ModuleInfo says -40% ammo. Runtime ApplyAmmo uses (base*55)/100 and ExText/notes say -45%. Original runtime and metadata are unchanged."
+    },
+    {
+      "id": "undeclared-ultra-dependency",
+      "fact": "Ultra notes require FHD_SET, and Ultra scripts call FHD_SET blocks. ModuleInfo has no Dependence key; both supplied modules are built together."
+    },
+    {
+      "id": "language-files",
+      "fact": "Both ModuleInfo files advertise Eng, but the upload contains CFG/Rus/Lang.dat only. No English DAT was invented."
+    }
+  ],
+  "live_game_executed": false,
+  "test_scope": "Source-only reconstruction, byte identity, DAT/GI edit roundtrips and static configuration reference checks; no game interpreter, loader or gameplay execution",
+  "environment": {
+    "python": "3.12.14",
+    "zlib": "1.3.2"
+  }
+}

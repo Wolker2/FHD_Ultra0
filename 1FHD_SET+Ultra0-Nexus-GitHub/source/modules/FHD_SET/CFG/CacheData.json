@@ -1,0 +1,52 @@
+{
+  "format": "cachedata",
+  "seed": 327647617,
+  "root": {
+    "entries": [
+      {
+        "kind": "block",
+        "name": "Bm",
+        "value": {
+          "entries": [
+            {
+              "kind": "block",
+              "name": "ItemsUseless",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "parameter",
+                    "name": "2FHDSET_SearchTool_s",
+                    "value": "Mods\\FHD_MODS\\FHD_SET\\DATA\\ItemsUseless\\FHDSET_SearchTool.gi"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "kind": "block",
+        "name": "FHDSETV1",
+        "value": {
+          "entries": [
+            {
+              "kind": "parameter",
+              "name": "Build",
+              "value": "NORMAL"
+            },
+            {
+              "kind": "parameter",
+              "name": "Runtime",
+              "value": "Mods\\FHD_MODS\\FHD_SET"
+            },
+            {
+              "kind": "parameter",
+              "name": "Version",
+              "value": "2.3.0-v25-canonical"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

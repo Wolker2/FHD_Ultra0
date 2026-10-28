@@ -1,0 +1,19 @@
+Name=FHD_Ultra0
+Section=FHD_MODS
+Author=Prolog_D
+Priority=2
+Conflict=EvoFreeInflation,EvoNoInflation
+Languages=Rus
+SmallDescription=<color=255,000,000>Ультра 0</color> -Это эксперементальный корабыль для FHD_SET v2.4.1+. Появляется начиная с ГТУ 3 в единственном экземпляре.
+SmallDescription=<color=255,215,0>ver.1.0.22 Alpha</color>
+FullDescription=Эксперементальный Корпус который добавляет SET x2 отключается при 3+ установленных обычных предметах с прочностью 20% и ниже; артефакты в этот счётчик не входят.
+FullDescription=После ремонта повреждённых предметов выше порога SET x2 автоматически возвращается.Ракетный боезапас -40%; мощность дроида переходит на усиление характеристик SET. При этом износ орудий увеличен.При Shock/Acid(коррозия)/Magnetic/WeaponBlock/DroidBlock/BWRepairDebuff активные артефакты временно отключаются; после исчезновения последнего дебафа их исходная прочность восстанавливается.
+FullDescription=Название корпуса: <color=255,000,000>Ультра 0</color>.
+SmallDescription=------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+FullDescription= ------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+Languages=Eng
+SmallDescription=<color=255,000,000>Ultra 0</color> - Is an experimental ship for FHD_SET v2.4.1+. Appears starting from GTL 3 as a unique single instance.
+SmallDescription=<color=255,215,0>ver.1.0.22 Alpha</color>
+FullDescription=An experimental Hull that grants SET x2, which deactivates when 3 or more regular items are installed with 20% durability or lower; artifacts are not counted towards this limit.
+FullDescription=Once damaged items are repaired above the threshold, SET x2 is automatically restored. Missile ammo capacity -40%; droid power is redirected to boosting SET stats. However, weapon wear rate is increased. Under Shock/Acid(corrosion)/Magnetic/WeaponBlock/DroidBlock/BWRepairDebuff active artifacts are temporarily disabled; after the last debuff expires, their original durability is restored.
+FullDescription=Hull name: <color=255,000,000>Ultra 0</color>.
